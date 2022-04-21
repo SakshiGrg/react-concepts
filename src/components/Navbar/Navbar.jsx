@@ -11,17 +11,22 @@ const Navbar = (props) => {
         <nav className="navbar navbar--default">
             <div className="navbar__container">
                 <div className="navbar__logo">
-                    <img src={logo} alt="Logo" />
+                    <Link to="">
+                        <img src={logo} alt="Logo" />
+                    </Link>
                 </div>
                 <ul className="nav navbar__list">
-                    <li className="navbar__list-item">
+                    {/* <li className="navbar__list-item">
                         <Link to="">LearnReact</Link>
-                    </li>
+                    </li> */}
                     <li className="navbar__list-item">
                         <Link to="/about">About</Link>
                     </li>
                     <li className="navbar__list-item">
                         <Link to="/overview"> Overview</Link>
+                    </li>
+                    <li className="navbar__list-item">
+                        <Link to="/products"> Products</Link>
                     </li>
                 </ul>
             </div>
