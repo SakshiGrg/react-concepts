@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
-// import HuelLogo from '../../HuelLogo';
 import logo from '../../logo.svg';
 import './Navbar.css';
 
