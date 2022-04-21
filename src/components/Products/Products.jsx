@@ -1,17 +1,31 @@
 import React, {useState, useEffect} from 'react';
 
-const Products = (props) => {
-    const [data, setData] = useState(null);
+const Products = () => {
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         console.log('Products comp Re-renders/Update');
     });
 
     useEffect(() => {
+        loadData();
+    }, []);
+
+    //fetch api call
+    const loadData = () => {
         fetch('https://jsonplaceholder.typicode.com/todos')
             .then((res) => res.json())
             .then((data) => setData(data));
-    }, []);
+    };
+
+    // async await fetch api
+    // const loadData = async () => {
+    //     const api = 'https://jsonplaceholder.typicode.com/todos';
+    //     const response = await fetch(api);
+    //     const data = await response.json();
+    //     setData(data);
+    //     console.log('getData-->', data);
+    // };
 
     const renderProducts =
         data &&
