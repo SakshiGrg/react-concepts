@@ -1,0 +1,12 @@
+.navbar{
+    background-color: lightGray;
+    padding: 0.5rem 0;
+}
+.nav {
+    list-style: none;
+    padding: 0 1rem;
+}
+.nav a {
+    text-decoration: none;
+   
+}
