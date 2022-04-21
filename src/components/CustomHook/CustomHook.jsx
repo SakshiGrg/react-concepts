@@ -4,10 +4,6 @@ import useFetch from '../../hooks/useFetch';
 const CustomHook = () => {
     const [data] = useFetch('https://jsonplaceholder.typicode.com/todos');
 
-    useEffect(() => {
-        console.log('Products comp Re-renders/Update');
-    });
-
     const renderProducts =
         data &&
         data

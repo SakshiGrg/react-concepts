@@ -3,10 +3,7 @@ import {Link} from 'react-router-dom';
 import logo from '../../logo.svg';
 import './Navbar.css';
 
-const Navbar = (props) => {
-    useEffect(() => {
-        console.log('Navbar comp Re-renders/Update');
-    });
+const Navbar = () => {
     return (
         <nav className="navbar navbar--default">
             <div className="navbar__container">

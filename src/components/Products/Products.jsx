@@ -4,10 +4,6 @@ const Products = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        console.log('Products comp Re-renders/Update');
-    });
-
-    useEffect(() => {
         loadData();
     }, []);
 
