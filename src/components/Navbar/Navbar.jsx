@@ -28,6 +28,9 @@ const Navbar = (props) => {
                     <li className="navbar__list-item">
                         <Link to="/products"> Products</Link>
                     </li>
+                    <li className="navbar__list-item">
+                        <Link to="/customHook"> CustomHook</Link>
+                    </li>
                 </ul>
             </div>
         </nav>

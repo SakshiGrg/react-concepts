@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Navbar from './components/Navbar/Navbar';
 import Overview from './components/Overview/Overview';
 import Products from './components/Products/Products';
+import CustomHook from './components/CustomHook/CustomHook';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                     <Route path="/about" element={<About link="About" />}></Route>
                     <Route path="/overview" element={<Overview compname="Overview" />}></Route>
                     <Route path="/products" element={<Products />}></Route>
+                    <Route path="/customHook" element={<CustomHook />}></Route>
                 </Routes>
             </div>
         </div>
