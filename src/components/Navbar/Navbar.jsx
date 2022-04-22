@@ -12,7 +12,7 @@ const Navbar = () => {
                         <img src={logo} alt="Logo" />
                     </Link>
                 </div>
-                <ul className="nav navbar__list">
+                <ul className="navbar navbar__list">
                     {/* <li className="navbar__list-item">
                         <Link to="">LearnReact</Link>
                     </li> */}
