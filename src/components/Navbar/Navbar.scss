@@ -1,32 +1,29 @@
-$myColor: red;
+$spacing: 22px;
+$spacingLarger: 32px;
+$colorWhite: #ffffff;
+$colorGrey1: #f0f0f0;
+$colorGrey2: #e5e5e5;
+$colorBlue1: #51bced;
+$colorBlue2: #0d81c4;
+$logoWidth: 62px;
 
-:root {
-    --spacing: 22px;
-    --spacingLarger: 32px;
-    --colorWhite: #ffffff;
-    --colorGrey1: #f0f0f0;
-    --colorGrey2: #e5e5e5;
-    --colorBlue1: #51bced;
-    --colorBlue2: #0d81c4;
-    --logoWidth: 62px;
-  }
 
 /* Navbar */
 .navbar {
     width: 100%;
     padding: 12px 0;
-    border-bottom: 1px solid var(--colorGrey2);
-    background-color: var(--colorWhite);
+    border-bottom: 1px solid $colorGrey2;
+    background-color: $colorWhite;
 
     &__container{
         display: flex;
     }
 
     &__logo{
-        width: var(--logoWidth);
-        margin-right: var(--spacing);
-        padding-right: var(--spacing);
-        border-right: 1px solid var(--colorGrey2);
+        width: $logoWidth;
+        margin-right: $spacing;
+        padding-right: $spacing;
+        border-right: 1px solid $colorGrey2;
     }
 
     &__list{
@@ -42,7 +39,7 @@ $myColor: red;
            text-decoration: none;
            font-weight: bold;
            font-size: 0.875rem;
-           margin-right:var(--spacing);
+           margin-right:$spacing;
            transition: opacity 150ms linear;
            cursor: pointer;
         }
