@@ -1,9 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useMemo} from 'react';
 import Child from './Child';
 
 const About = (props) => {
     const [number, setNumber] = useState(0);
-    const squaredNum = squareNum(number);
+    //using UseMemo to stop re-rendering of COMPONENT
+    const squaredNum = useMemo(() => {
+        return squareNum(number);
+    }, [number]);
     const [count, setCount] = useState(0);
     console.log('Parent rendered');
     const onChangeHandler = (e) => {
