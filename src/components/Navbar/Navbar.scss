@@ -50,66 +50,66 @@ $logoWidth: 62px;
     }
 }
 
-#nav {
-    font-weight: 300;
-    font-size: 15px;
-    ul{
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        list-style: none;
-        padding:0;
-        margin:0;
-        align-items: center;
-        height: 40px;
-        /*for vertical mode
-        grid-template-rows: repeat(4,1fr);
-        width:300px;*/
-        li{
-            position: relative;
-           a{
-               text-align: center;
-               background-color: #cfcfcf;
-               text-decoration: none;
-               color: #333;
-               padding: 0 25px;
-               display: block;
-               line-height: 40px;
-                &:hover{
-                    background: #915fa6;
-                    color: #FFFFFF;
-                }
-           }
-           ul{
-                display: grid;
-                grid-template-columns: 1fr;
-                position: absolute;
-                width: 100%;
-                display: none;
-                top:40px;
-                /* for vertical mode
-                left: 100%;
-                bottom: 0;*/
-                li a{
-                    text-align: left;
-                }
-                ul{
-                    top:0;
-                    right:-100%;
-                }
-           }
-           &:hover > ul{
-                display: block;
-            }
-        }
-    }
+// #nav {
+//     font-weight: 300;
+//     font-size: 15px;
+//     ul{
+//         display: grid;
+//         grid-template-columns: repeat(5,1fr);
+//         list-style: none;
+//         padding:0;
+//         margin:0;
+//         align-items: center;
+//         height: 40px;
+//         /*for vertical mode
+//         grid-template-rows: repeat(4,1fr);
+//         width:300px;*/
+//         li{
+//             position: relative;
+//            a{
+//                text-align: center;
+//                background-color: #cfcfcf;
+//                text-decoration: none;
+//                color: #333;
+//                padding: 0 25px;
+//                display: block;
+//                line-height: 40px;
+//                 &:hover{
+//                     background: #915fa6;
+//                     color: #FFFFFF;
+//                 }
+//            }
+//            ul{
+//                 display: grid;
+//                 grid-template-columns: 1fr;
+//                 position: absolute;
+//                 width: 100%;
+//                 display: none;
+//                 top:40px;
+//                 /* for vertical mode
+//                 left: 100%;
+//                 bottom: 0;*/
+//                 li a{
+//                     text-align: left;
+//                 }
+//                 ul{
+//                     top:0;
+//                     right:-100%;
+//                 }
+//            }
+//            &:hover > ul{
+//                 display: block;
+//             }
+//         }
+//     }
 
-}
+// }
 
-#nav > ul > li{
-    &:nth-child(4) > a{
-        background-color: #ffd9b3;
-       }
-}
+// #nav > ul > li{
+//     &:nth-child(4) > a{
+//         background-color: #ffd9b3;
+//        }
+// }
 
 
  
