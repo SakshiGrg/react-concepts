@@ -5,7 +5,6 @@ import About from './components/About/About';
 import Navbar from './components/Navbar/Navbar';
 import Overview from './components/Overview/Overview';
 import Products from './components/Products/Products';
-import CustomHook from './components/CustomHook/CustomHook';
 
 function App() {
     return (

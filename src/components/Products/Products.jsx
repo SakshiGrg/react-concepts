@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from 'react';
-import CustomHook from '../CustomHook/CustomHook';
+import React, {useState, useEffect, lazy, Suspense} from 'react';
+// import CustomHook from '../CustomHook/CustomHook';
+const CustomHook = lazy(() => import('../CustomHook/CustomHook')); /** LAZY LOADING USECASE */
 
 const Products = () => {
     const [data, setData] = useState([]);
@@ -41,7 +42,9 @@ const Products = () => {
             {data && <h1>Products</h1>}
             {renderProducts}
             <br />
-            <CustomHook />
+            <Suspense fallback={<div>Loading Custom Hook...</div>}>
+                <CustomHook />
+            </Suspense>
         </div>
     );
 };
