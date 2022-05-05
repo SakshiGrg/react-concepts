@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
+import CustomHook from '../CustomHook/CustomHook';
 
 const Products = () => {
     const [data, setData] = useState([]);
-
     useEffect(() => {
         loadData();
     }, []);
@@ -38,8 +38,10 @@ const Products = () => {
 
     return (
         <div className="products-container">
-            <h1>Products</h1>
+            {data && <h1>Products</h1>}
             {renderProducts}
+            <br />
+            <CustomHook />
         </div>
     );
 };

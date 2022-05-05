@@ -18,7 +18,7 @@ function App() {
                     <Route path="/about" element={<About link="About" />}></Route>
                     <Route path="/overview" element={<Overview compname="Overview" />}></Route>
                     <Route path="/products" element={<Products />}></Route>
-                    <Route path="/customHook" element={<CustomHook />}></Route>
+                    {/* <Route path="/customHook" element={<CustomHook />}></Route> */}
                 </Routes>
             </div>
         </div>
