@@ -14,7 +14,7 @@ function App() {
             <div className="main-content">
                 <Routes>
                     <Route path="/" element={<LearnReact />}></Route>
-                    <Route path="/about" element={<About link="About" />}></Route>
+                    <Route path="/memo" element={<About link="Memoisation" />}></Route>
                     <Route path="/overview" element={<Overview compname="Overview" />}></Route>
                     <Route path="/products" element={<Products />}></Route>
                     {/* <Route path="/customHook" element={<CustomHook />}></Route> */}
